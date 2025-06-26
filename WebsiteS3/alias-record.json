@@ -1,0 +1,16 @@
+{
+    "Changes": [
+        {
+            "Action": "CREATE",
+            "ResourceRecordSet": {
+                "Name": "",
+                "Type": "A",
+                "AliasTarget": {
+                    "HostedZoneId": "Z00771342P0B4WLGQ0GTV",  # Fixed S3 Hosted Zone ID for us-east-1
+                    "DNSName": "s3-website-us-east-1.amazonaws.com",
+                    "EvaluateTargetHealth": false
+                }
+            }
+        }
+    ]
+}
