@@ -1,0 +1,6 @@
+#!/bin/bash
+
+aws cloudformation create-stack \
+  --stack-name ContactFormStack \
+  --template-body file://dynamodb-table.yaml \
+  --capabilities CAPABILITY_NAMED_IAM
