@@ -1,12 +1,20 @@
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "6.3.0"
+    }
+  }
+}
+
 provider "aws" {
   region = "us-east-1"
 }
-
 resource "aws_s3_bucket" "example" {
-  bucket = "myBucket-5544662211"
-  acl    = "private"
+  bucket = "hussameldein-bucket8573625"
 
   tags = {
+    Name        = "My bucket"
     Environment = "Dev"
   }
 }
